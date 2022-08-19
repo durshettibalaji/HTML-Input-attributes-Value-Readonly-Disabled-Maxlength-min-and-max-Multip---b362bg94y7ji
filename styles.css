@@ -1,80 +1,88 @@
 body, html{
-    height:100%;
-    margin:0;
-    font-size:16px;
-    font-family:"Lato", sans-serif;
-    font-weight:400;
-    line-height:1.8em;
-    color:#666;
-  }
-  
-  .pimg1, .pimg2, .pimg3{
-    position:relative;
-    opacity:0.70;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-  
-    /*
-      fixed = parallax
-      scroll = normal
-    */
-    background-attachment:fixed;
-  }
-  
-  .pimg1{
-    background-image:url('../img/image1.jpg');
-    min-height:100%;
-  }
-  
-  .pimg2{
-    background-image:url('../img/image2.jpg');
-    min-height:400px;
-  }
-  
-  .pimg3{
-    background-image:url('../img/image3.jpg');
-    min-height:400px;
-  }
-  
-  .section{
-    text-align:center;
-    padding:50px 80px;
-  }
-  
-  .section-light{
-    background-color:#f4f4f4;
-    color:#666;
-  }
-  
-  .section-dark{
-    background-color:#282e34;
-    color:#ddd;
-  }
-  
-  .ptext{
-    position:absolute;
-    top:50%;
-    width:100%;
-    text-align:center;
-    color:#000;
-    font-size:27px;
-    letter-spacing:8px;
-    text-transform:uppercase;
-  }
-  
-  .ptext .border{
-    background-color:#111;
-    color:#fff;
-    padding:20px;
-  }
-  
-  .ptext .border.trans{
-    background-color:transparent;
-  }
-  
-  @media(max-width:568px){
-    .pimg1, .pimg2, .pimg3{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+p{
+  font-size: 20px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6{
+  position:relative;
+  opacity:1;
+  background-position:center; 
+   background-size:cover; 
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  /* width: 100vw; */
+}
+
+.pimg1{
+  background-image:url("https://tse1.mm.bing.net/th?id=OIP.3SdEB0DXE7fiVwq_t3UK2gHaEK&pid=Api&P=0");
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url("https://images6.alphacoders.com/101/1010197.jpg");
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url("http://cdn.knowledgehi.com/2000x1400/20131213/aircraft%20military%20eurofighter%20typhoon%20planes%20vehicles%20sukhoi%20indian%20air%20force%20su30mki_www.knowledgehi.com_82.jpg");
+  min-height:400px;
+}
+.pimg4{
+  background-image:url("https://ssbcrackexams.com/wp-content/uploads/2020/06/indian-army-officer-killed-in-clash-with-china.jpg");
+  min-height:400px;
+}
+.pimg5{
+  background-image:url("https://www.itl.cat/pngfile/big/158-1581496_armys-para-commandos-the-surgical-strike-heroes-today.gif");
+  min-height:400px;
+}
+.pimg6{
+  background-image:url("/images/in4.jpg");
+  min-height:800px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-dark{
+  background-color:#000407a2;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:33px;
+  letter-spacing:5px;
+  word-spacing: 10px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:rgba(144, 154, 208, 0.152);
+  font-weight: bolder;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
       background-attachment:scroll;
-    }
   }
+}
